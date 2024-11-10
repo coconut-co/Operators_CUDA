@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yst/文档/jwj/cuda/panada/my_cuda/8.gelu/gelu.cu
+cuda.h
+-
+cuda_runtime.h
+-
+iostream
+-
+

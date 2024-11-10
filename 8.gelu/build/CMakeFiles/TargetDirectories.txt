@@ -1,0 +1,5 @@
+/home/yst/文档/jwj/cuda/panada/my_cuda/8.gelu/build/CMakeFiles/rebuild_cache.dir
+/home/yst/文档/jwj/cuda/panada/my_cuda/8.gelu/build/CMakeFiles/gelu_fp16_v2.dir
+/home/yst/文档/jwj/cuda/panada/my_cuda/8.gelu/build/CMakeFiles/edit_cache.dir
+/home/yst/文档/jwj/cuda/panada/my_cuda/8.gelu/build/CMakeFiles/gelu_fp16_v1.dir
+/home/yst/文档/jwj/cuda/panada/my_cuda/8.gelu/build/CMakeFiles/gelu.dir

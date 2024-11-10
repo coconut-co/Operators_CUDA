@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yst/文档/jwj/cuda/panada/my_cuda/4.device_query/4.device_query.cu
+cuda_runtime.h
+-
+cuda.h
+-
+iostream
+-
+

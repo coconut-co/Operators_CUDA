@@ -1,0 +1,1 @@
+/usr/bin/g++  CMakeFiles/copy_if.dir/7.copy_if.cu.o -o copy_if  -L"/usr/local/cuda-11.8/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda-11.8/targets/x86_64-linux/lib" -lcudadevrt -lcudart_static -lrt -lpthread -ldl

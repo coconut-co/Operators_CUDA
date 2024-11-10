@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yst/文档/jwj/cuda/panada/my_cuda/2.indexing/2.indexing.cu
+stdio.h
+-
+cuda.h
+-
+string.h
+-
+
