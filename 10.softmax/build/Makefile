@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named softmax_v2
+
+# Build rule for target.
+softmax_v2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 softmax_v2
+.PHONY : softmax_v2
+
+# fast build rule for target.
+softmax_v2/fast:
+	$(MAKE) -f CMakeFiles/softmax_v2.dir/build.make CMakeFiles/softmax_v2.dir/build
+.PHONY : softmax_v2/fast
+
+#=============================================================================
 # Target rules for targets named softmax_v1
 
 # Build rule for target.
@@ -190,6 +203,33 @@ softmax_v1.cu.s:
 	$(MAKE) -f CMakeFiles/softmax_v1.dir/build.make CMakeFiles/softmax_v1.dir/softmax_v1.cu.s
 .PHONY : softmax_v1.cu.s
 
+softmax_v2.o: softmax_v2.cu.o
+
+.PHONY : softmax_v2.o
+
+# target to build an object file
+softmax_v2.cu.o:
+	$(MAKE) -f CMakeFiles/softmax_v2.dir/build.make CMakeFiles/softmax_v2.dir/softmax_v2.cu.o
+.PHONY : softmax_v2.cu.o
+
+softmax_v2.i: softmax_v2.cu.i
+
+.PHONY : softmax_v2.i
+
+# target to preprocess a source file
+softmax_v2.cu.i:
+	$(MAKE) -f CMakeFiles/softmax_v2.dir/build.make CMakeFiles/softmax_v2.dir/softmax_v2.cu.i
+.PHONY : softmax_v2.cu.i
+
+softmax_v2.s: softmax_v2.cu.s
+
+.PHONY : softmax_v2.s
+
+# target to generate assembly for a file
+softmax_v2.cu.s:
+	$(MAKE) -f CMakeFiles/softmax_v2.dir/build.make CMakeFiles/softmax_v2.dir/softmax_v2.cu.s
+.PHONY : softmax_v2.cu.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -197,6 +237,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... softmax_v2"
 	@echo "... edit_cache"
 	@echo "... softmax_v1"
 	@echo "... softmax_v0"
@@ -206,6 +247,9 @@ help:
 	@echo "... softmax_v1.o"
 	@echo "... softmax_v1.i"
 	@echo "... softmax_v1.s"
+	@echo "... softmax_v2.o"
+	@echo "... softmax_v2.i"
+	@echo "... softmax_v2.s"
 .PHONY : help
 
 

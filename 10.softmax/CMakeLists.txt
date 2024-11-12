@@ -39,3 +39,6 @@ add_executable(softmax_v0
 add_executable(softmax_v1
     softmax_v1.cu
 )
+add_executable(softmax_v2
+    softmax_v2.cu
+)

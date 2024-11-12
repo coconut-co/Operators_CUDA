@@ -52,6 +52,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/softmax_v2.dir/DependInfo.cmake"
   "CMakeFiles/softmax_v1.dir/DependInfo.cmake"
   "CMakeFiles/softmax_v0.dir/DependInfo.cmake"
   )

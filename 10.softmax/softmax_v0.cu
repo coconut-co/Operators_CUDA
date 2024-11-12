@@ -1,4 +1,4 @@
-// v0：使用共享内存 SmemSoftmax latency = 28.892096 ms
+// v0：使用共享内存 smemSoftmax latency =  0.301440 ms
 
 # include <cuda.h>
 # include <cuda_runtime.h>
@@ -109,7 +109,7 @@ int main(){
     softmaxCPU(x_host, groundtruth, 1000, 1024);
     checkResult(y_host, groundtruth, N);
 
-    printf("SmemSoftmax latency = %f ms\n", milliseconds);
+    printf("smemSoftmax latency = %f ms\n", milliseconds);
 
     cudaFree(x_device);
     cudaFree(y_device);
