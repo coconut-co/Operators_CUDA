@@ -1,0 +1,58 @@
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/yst/文档/jwj/cuda/panada/Operators_CUDA/11.vectorAdd_bandwidths/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ceba4/fast && /usr/bin/make -f CMakeFiles/cmTC_ceba4.dir/build.make CMakeFiles/cmTC_ceba4.dir/build
+make[1]: 进入目录“/home/yst/文档/jwj/cuda/panada/Operators_CUDA/11.vectorAdd_bandwidths/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_ceba4.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ceba4.dir/src.cxx.o -c /home/yst/文档/jwj/cuda/panada/Operators_CUDA/11.vectorAdd_bandwidths/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ceba4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ceba4.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_ceba4.dir/src.cxx.o  -o cmTC_ceba4 
+/usr/bin/ld: CMakeFiles/cmTC_ceba4.dir/src.cxx.o: in function `main':
+src.cxx:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.cxx:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.cxx:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ceba4.dir/build.make:87：cmTC_ceba4] 错误 1
+make[1]: 离开目录“/home/yst/文档/jwj/cuda/panada/Operators_CUDA/11.vectorAdd_bandwidths/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_ceba4/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/yst/文档/jwj/cuda/panada/Operators_CUDA/11.vectorAdd_bandwidths/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_55bef/fast && /usr/bin/make -f CMakeFiles/cmTC_55bef.dir/build.make CMakeFiles/cmTC_55bef.dir/build
+make[1]: 进入目录“/home/yst/文档/jwj/cuda/panada/Operators_CUDA/11.vectorAdd_bandwidths/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_55bef.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_55bef.dir/CheckFunctionExists.cxx.o -c /home/yst/文档/jwj/cuda/panada/Operators_CUDA/11.vectorAdd_bandwidths/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_55bef
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55bef.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_55bef.dir/CheckFunctionExists.cxx.o  -o cmTC_55bef  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_55bef.dir/build.make:87：cmTC_55bef] 错误 1
+make[1]: 离开目录“/home/yst/文档/jwj/cuda/panada/Operators_CUDA/11.vectorAdd_bandwidths/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_55bef/fast] 错误 2
+
+
+

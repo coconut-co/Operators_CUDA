@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yst/文档/jwj/cuda/panada/Operators_CUDA/11.vectorAdd_bandwidths/vectorAdd_bandwidths.cu
+cuda.h
+-
+cuda_runtime.h
+-
+iostream
+-
+
