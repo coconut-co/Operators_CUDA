@@ -1,0 +1,1 @@
+/usr/bin/g++  CMakeFiles/measure_GPU_peak_perf.dir/measure_GPU_peak_perf.cu.o -o measure_GPU_peak_perf  -L"/usr/local/cuda-11.8/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda-11.8/targets/x86_64-linux/lib" -lcudadevrt -lcudart_static -lrt -lpthread -ldl

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CUDA
-  "/home/yst/文档/jwj/cuda/panada/my_cuda/4.device_query/4.device_query.cu" "/home/yst/文档/jwj/cuda/panada/my_cuda/4.device_query/build/CMakeFiles/device_query.dir/4.device_query.cu.o"
+  "/home/yst/文档/jwj/cuda/panada/Operators_CUDA/4.device_query/4.device_query.cu" "/home/yst/文档/jwj/cuda/panada/Operators_CUDA/4.device_query/build/CMakeFiles/device_query.dir/4.device_query.cu.o"
   )
 set(CMAKE_CUDA_COMPILER_ID "NVIDIA")
 

@@ -6,5 +6,5 @@ CUDA_FLAGS =   -Xcompiler -Wall                          -gencode=arch=compute_8
 
 CUDA_DEFINES = 
 
-CUDA_INCLUDES = -I/home/yst/文档/jwj/cuda/panada/my_cuda/4.device_query -I/home/yst/文档/jwj/cuda/panada/my_cuda/4.device_query/15_gemv 
+CUDA_INCLUDES = -I/home/yst/文档/jwj/cuda/panada/Operators_CUDA/4.device_query -I/home/yst/文档/jwj/cuda/panada/Operators_CUDA/4.device_query/15_gemv 
 

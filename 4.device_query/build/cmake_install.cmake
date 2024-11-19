@@ -1,4 +1,4 @@
-# Install script for directory: /home/yst/文档/jwj/cuda/panada/my_cuda/4.device_query
+# Install script for directory: /home/yst/文档/jwj/cuda/panada/Operators_CUDA/4.device_query
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yst/文档/jwj/cuda/panada/my_cuda/4.device_query/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/yst/文档/jwj/cuda/panada/Operators_CUDA/4.device_query/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
